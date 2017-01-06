@@ -5,6 +5,13 @@ var species = {
 };
 
 function main(){
+
+	$(".button").click(function(){
+	var esp = $(this).attr("data-animal");
+	$('#holder').html("<img src = 'img/"+ species[esp]  +"'>");
+	console.log( species[esp]);
+
+});
 	/* 
 	tout votre code doit se trouver dans cette fonction,
 	vous pouvez biensur créer d'autres fonctions si nécessaire
@@ -20,7 +27,7 @@ function main(){
 	
 	
 	 
-}
+};
 
 $(document).ready(function(){
 	main();
